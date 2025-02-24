@@ -51,19 +51,6 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
               </motion.button>
             ))}
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            <Button
-              onClick={onBookingClick}
-              variant="outline"
-              className="border-[#9F8772] text-[#9F8772] hover:bg-[#9F8772] hover:text-white transition-all duration-300"
-            >
-              Записаться
-            </Button>
-          </motion.div>
         </div>
       </div>
     </motion.nav>

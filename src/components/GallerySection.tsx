@@ -43,15 +43,6 @@ export default function GallerySection({
             <BeforeAfterCard key={index} {...result} />
           ))}
         </div>
-        <div className="text-center mt-12">
-          <Button
-            onClick={onBookingClick}
-            size="lg"
-            className="bg-[#9F8772] hover:bg-[#876F58] text-white"
-          >
-            Записаться на консультацию
-          </Button>
-        </div>
       </div>
     </section>
   );

@@ -44,13 +44,6 @@ export default function ServicesSection({
               <CardContent>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <p className="font-semibold mb-4">{service.price}</p>
-                <Button
-                  onClick={onBookingClick}
-                  variant="outline"
-                  className="w-full border-[#9F8772] text-[#9F8772] hover:bg-[#9F8772] hover:text-white"
-                >
-                  Записаться
-                </Button>
               </CardContent>
             </Card>
           ))}

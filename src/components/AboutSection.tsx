@@ -13,87 +13,92 @@ export default function AboutSection() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
-    <section className="py-16 bg-white">
+    <section className="py-24 bg-gradient-to-b from-white to-[#FDF8F3]">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold mb-6 text-[#2C1810]">О докторе</h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Добро пожаловать в мир профессиональной косметологии, где наука
+            встречается с искусством красоты
+          </p>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="relative"
           >
-            <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="text-3xl font-bold"
-            >
-              О докторе
-            </motion.h2>
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070"
+                alt="Доктор Анна Сергеевна"
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#9F8772] rounded-full opacity-20 blur-2xl"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#E6D5C9] rounded-full opacity-20 blur-xl"></div>
+          </motion.div>
+
+          <div className="space-y-10">
             <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="space-y-4 text-gray-600"
+              className="prose prose-lg max-w-none"
             >
-              <motion.p variants={itemVariants} className="mb-4">
-                Здравствуйте! Я Анна Сергеевна, врач-дерматокосметолог с
-                10-летним стажем работы. Являюсь членом Российского общества
-                дерматовенерологов и косметологов.
-              </motion.p>
-              <motion.p variants={itemVariants} className="mb-4">
-                Окончила Первый Московский государственный медицинский
-                университет им. И.М. Сеченова, прошла ординатуру по
-                дерматовенерологии и профессиональную переподготовку по
-                косметологии.
-              </motion.p>
-              <motion.p variants={itemVariants}>
-                Регулярно повышаю квалификацию на российских и международных
-                конференциях, владею современными методиками омоложения и
-                коррекции эстетических недостатков.
-              </motion.p>
+              <h3 className="text-2xl font-semibold mb-4 text-[#2C1810]">
+                Анна Сергеевна
+              </h3>
+              <div className="space-y-4 text-gray-600">
+                <p>
+                  Врач-дерматокосметолог с 10-летним стажем работы, член
+                  Российского общества дерматовенерологов и косметологов. Моя
+                  миссия — помогать людям обрести уверенность в себе через
+                  заботу о здоровье и красоте их кожи.
+                </p>
+                <p>
+                  Выпускница Первого Московского государственного медицинского
+                  университета им. И.М. Сеченова. Прошла ординатуру по
+                  дерматовенерологии и профессиональную переподготовку по
+                  косметологии.
+                </p>
+                <p>
+                  Постоянно совершенствую свои навыки на российских и
+                  международных конференциях, владею современными методиками
+                  омоложения и коррекции эстетических недостатков.
+                </p>
+              </div>
             </motion.div>
-          </motion.div>
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-2 gap-6"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                className="p-6 bg-[#FDF8F3] rounded-lg text-center cursor-pointer transition-all hover:shadow-lg"
-              >
-                <stat.icon className="w-8 h-8 mx-auto mb-3 text-[#9F8772]" />
-                <div className="text-2xl font-bold text-[#9F8772] mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
+
+            <div className="grid grid-cols-2 gap-6">
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="p-6 bg-white/80 backdrop-blur rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <stat.icon className="w-8 h-8 mb-3 text-[#9F8772]" />
+                  <div className="text-2xl font-bold text-[#2C1810] mb-1">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-gray-600">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
