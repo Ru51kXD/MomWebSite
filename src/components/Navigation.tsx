@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { WhatsappIcon } from "./icons/WhatsappIcon";
 
-interface NavigationProps {
-  onBookingClick: () => void;
-}
+interface NavigationProps {}
 
-export default function Navigation({ onBookingClick }: NavigationProps) {
+export default function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,7 +16,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -30,7 +28,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
           >
             Dr. Анна Сергеевна
           </motion.div>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {[
               { id: "about", text: "О докторе" },
               { id: "services", text: "Услуги" },
@@ -50,6 +48,20 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
                 {item.text}
               </motion.button>
             ))}
+            <motion.a
+              href="https://wa.me/79991234567"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              className="bg-[#25D366] hover:bg-[#128C7E] text-white px-4 py-2 rounded-md flex items-center space-x-2 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm font-medium animate-subtle-bounce"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <WhatsappIcon className="w-4 h-4" />
+              <span className="text-sm font-medium">Записаться</span>
+            </motion.a>
           </div>
         </div>
       </div>

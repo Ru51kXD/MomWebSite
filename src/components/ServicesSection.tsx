@@ -43,7 +43,7 @@ export default function ServicesSection({
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <p className="font-semibold mb-4">{service.price}</p>
+                <p className="font-semibold">{service.price}</p>
               </CardContent>
             </Card>
           ))}
