@@ -26,7 +26,7 @@ export default function Navigation() {
             transition={{ delay: 0.2 }}
             className="text-xl font-semibold text-[#9F8772]"
           >
-            Dr. Анна Сергеевна
+            Dr.Kononova
           </motion.div>
           <div className="hidden md:flex items-center space-x-8">
             {[
