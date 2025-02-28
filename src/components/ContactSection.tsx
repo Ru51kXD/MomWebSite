@@ -48,7 +48,7 @@ export default function ContactSection() {
             Для записи на консультацию или процедуру, пожалуйста, свяжитесь со
             мной любым удобным для вас способом
           </p>
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             {socialLinks.map((link, index) => (
               <motion.a
                 key={index}
@@ -59,7 +59,7 @@ export default function ContactSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={link.hoverScale ? { scale: 1.05 } : {}}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                className={`${link.color} text-white rounded px-4 py-2 flex items-center justify-center space-x-1.5 transition-all duration-300 text-sm`}
+                className={`${link.color} text-white rounded px-4 py-2 flex items-center justify-center space-x-1.5 transition-all duration-300 text-sm w-full sm:w-auto`}
               >
                 <link.icon className="w-5 h-5" />
                 <span className="font-medium">{link.label}</span>

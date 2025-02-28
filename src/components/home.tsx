@@ -6,6 +6,7 @@ import GallerySection from "./GallerySection";
 import AboutSection from "./AboutSection";
 import CertificatesSection from "./CertificatesSection";
 import ContactSection from "./ContactSection";
+import AdminPanel from "./admin/AdminPanel";
 
 export default function HomePage() {
   return (
@@ -16,12 +17,8 @@ export default function HomePage() {
         <section id="about">
           <AboutSection />
         </section>
-        <section id="services">
-          <ServicesSection />
-        </section>
-        <section id="gallery">
-          <GallerySection />
-        </section>
+        <ServicesSection />
+        <GallerySection />
         <CertificatesSection />
         <ContactSection />
       </main>
@@ -36,7 +33,7 @@ export default function HomePage() {
               Профессиональная косметология с индивидуальным подходом к каждому
               клиенту. Безопасность и качество - наши главные приоритеты.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
                 <p className="font-medium text-[#2C1810]">Телефон</p>
                 <p className="text-gray-600">+7 (999) 123-45-67</p>
@@ -62,6 +59,7 @@ export default function HomePage() {
         </div>
       </footer>
 
+      <AdminPanel />
       <Toaster />
     </div>
   );

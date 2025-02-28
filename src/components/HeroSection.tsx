@@ -9,7 +9,7 @@ interface HeroSectionProps {
 export default function HeroSection({ onBookingClick }: HeroSectionProps) {
   return (
     <div className="relative min-h-[600px] bg-[#FDF8F3] flex items-center">
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center py-8 md:py-0">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
