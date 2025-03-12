@@ -61,6 +61,9 @@ export default function Navigation() {
                 { id: "about", text: "О докторе" },
                 { id: "services", text: "Услуги" },
                 { id: "gallery", text: "Результаты" },
+                { id: "reviews", text: "Отзывы" },
+                { id: "faq", text: "Вопросы" },
+                { id: "map", text: "Как найти" },
                 { id: "contacts", text: "Контакты" },
               ].map((item, index) => (
                 <motion.button
@@ -129,6 +132,9 @@ export default function Navigation() {
                 { id: "about", text: "О докторе" },
                 { id: "services", text: "Услуги" },
                 { id: "gallery", text: "Результаты" },
+                { id: "reviews", text: "Отзывы" },
+                { id: "faq", text: "Вопросы" },
+                { id: "map", text: "Как найти" },
                 { id: "contacts", text: "Контакты" },
               ].map((item, index) => (
                 <motion.button

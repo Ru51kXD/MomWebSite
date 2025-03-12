@@ -1,8 +1,11 @@
 interface BookingData {
   name: string;
   phone: string;
+  email?: string;
   date: Date;
-  message: string;
+  time?: string;
+  service?: string;
+  message?: string;
 }
 
 export async function submitBooking(

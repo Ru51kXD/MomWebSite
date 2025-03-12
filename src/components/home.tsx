@@ -6,6 +6,9 @@ import GallerySection from "./GallerySection";
 import AboutSection from "./AboutSection";
 import CertificatesSection from "./CertificatesSection";
 import ContactSection from "./ContactSection";
+import ReviewsSection from "./ReviewsSection";
+import FAQSection from "./FAQSection";
+import MapSection from "./MapSection";
 import AdminPanel from "./admin/AdminPanel";
 
 export default function HomePage() {
@@ -19,7 +22,10 @@ export default function HomePage() {
         </section>
         <ServicesSection />
         <GallerySection />
+        <ReviewsSection />
         <CertificatesSection />
+        <FAQSection />
+        <MapSection />
         <ContactSection />
       </main>
 
@@ -44,14 +50,14 @@ export default function HomePage() {
               </div>
               <div className="text-center">
                 <p className="font-medium text-[#2C1810]">Адрес</p>
-                <p className="text-gray-600">ул. Примерная, 123, Москва</p>
+                <p className="text-gray-600">г. Астана, ТРЦ Азия парк</p>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-200 pt-8 text-center">
             <p className="text-sm text-gray-500">
               &copy; {new Date().getFullYear()} Косметологический кабинет
-              доктора Анны Сергеевны.
+              доктора Светланы Николаевны.
               <br />
               Все права защищены.
             </p>
