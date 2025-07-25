@@ -47,7 +47,7 @@ export default function MapSection() {
                 <Phone className="w-5 h-5 text-[#9F8772] mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium text-[#2C1810]">Телефон</h4>
-                  <p className="text-gray-600">+7 (999) 123-45-67</p>
+                  <p className="text-gray-600">+7 (701) 364-40-08</p>
                 </div>
               </div>
 

@@ -31,7 +31,7 @@ export default function HeroSection({ onBookingClick }: HeroSectionProps) {
           className="relative aspect-[4/3] rounded-2xl overflow-hidden"
         >
           <img
-            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070"
+            src="../img/1FM.jpg"
             alt="Косметологические процедуры"
             className="object-cover w-full h-full"
           />

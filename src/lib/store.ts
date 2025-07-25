@@ -136,7 +136,7 @@ export const useStore = create<StoreState>(
         {
           id: "1",
           beforeImage:
-            "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=800&q=80",
+            "../img/DO1.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
           description: "Результат после курса биоревитализации",
@@ -144,7 +144,7 @@ export const useStore = create<StoreState>(
         {
           id: "2",
           beforeImage:
-            "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80",
+            "../img/DO2.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80",
           description: "Эффект после пилинга и RF-лифтинга",
@@ -152,7 +152,7 @@ export const useStore = create<StoreState>(
         {
           id: "3",
           beforeImage:
-            "https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=800&q=80",
+            "../img/DO3.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=800&q=80",
           description: "Результат комплексного ухода",
@@ -160,7 +160,7 @@ export const useStore = create<StoreState>(
         {
           id: "4",
           beforeImage:
-            "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?w=800&q=80",
+            "../img/DO4.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1542996966-2e31c00bae31?w=800&q=80",
           description: "Коррекция морщин в области лба",
@@ -168,7 +168,7 @@ export const useStore = create<StoreState>(
         {
           id: "5",
           beforeImage:
-            "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
+            "../img/DO5.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?w=800&q=80",
           description: "Удаление папиллом",
@@ -176,7 +176,7 @@ export const useStore = create<StoreState>(
         {
           id: "6",
           beforeImage:
-            "https://images.unsplash.com/photo-1531299244174-d247dd4e5a66?w=800&q=80",
+            "../img/DO6.jpg",
           afterImage:
             "https://images.unsplash.com/photo-1605294283245-aad4d294d518?w=800&q=80",
           description: "Омоложение кожи шеи",

@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
                 <p className="font-medium text-[#2C1810]">Телефон</p>
-                <p className="text-gray-600">+7 (999) 123-45-67</p>
+                <p className="text-gray-600">+7 (701) 364-40-08</p>
               </div>
               <div className="text-center">
                 <p className="font-medium text-[#2C1810]">Email</p>
